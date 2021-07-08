@@ -1,0 +1,76 @@
+  body {
+            margin: 20px;
+            text-align:center;
+        }
+        h1 {
+            color: green;
+        }
+        h3{
+            text-align: center;
+            font-size: 1rem;
+        }
+        hr{
+            margin-top: -12px;
+            border: 2px solid #000;
+            
+        }
+        .gift-cards {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left; 
+          }  
+         
+          .box_1{
+            width: 420px;
+            min-width: 390px;
+            height: 620px;
+            padding: 10px;
+            /* border: 1px solid #000; */
+            text-align: justify;
+            margin-left: -200px;
+          }
+        /* This div design part is
+            used as an Image */
+        .round {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            float: left;
+            font-weight: bold;
+             
+            /* Change the shape according
+                to the image */
+            shape-outside: circle();
+            background-color: Green;
+            color: white;
+        }
+         
+        article{
+            display: inline-block;
+        }
+        .photo{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+
+        }
+         
+        p {
+            text-align: justify;
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .gift-cards {
+              grid-template-columns: 1fr;
+            }
+            .box_1{
+                margin-left: 50px;
+            }
+            .round{
+                margin-left: 50px;
+            }
+          }
