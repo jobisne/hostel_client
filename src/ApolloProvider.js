@@ -9,7 +9,7 @@ import { ApolloLink } from "apollo-link";
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createUploadLink({
-  uri: `http://localhost:4000/graphql`,
+  uri: `https://polar-cliffs-34260.herokuapp.com/graphql`,
 });
 
 const authLink = setContext(() => {
