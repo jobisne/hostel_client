@@ -4,7 +4,7 @@ import './Slide.css';
 function OurProject() {
     return (
         <div>
-            <h1>Our Project</h1>
+            <h1>Our Events</h1>
             <div id="slider">
                 <figure>
                     <img src={'images/image_1.jpeg'}  alt='travel' />
@@ -12,6 +12,8 @@ function OurProject() {
                     <img src={'images/image_3.jpeg'}  alt='travel'/>
                     <img src={'images/image_4.jpeg'} alt='travel'/>
                     <img src={'images/image_5.jpeg'} alt='travel' />
+                    <img src={'images/image_6.jpeg'} alt='travel' />
+
                 </figure>
 	
 	        </div>
