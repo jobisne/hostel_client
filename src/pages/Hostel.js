@@ -43,7 +43,7 @@ function Hostel(props) {
     };
   }, [single_hostel]);
 
-  const { id, hostelName, hostelImage, hostelDec, hostelMaster } = getHostel;
+  const { hostelName, hostelImage, hostelMaster } = getHostel;
   console.log(hostelName)
 
   const { data: num_aetam } = useQuery(FETCH_NUMBERS_OF_AETAM, {

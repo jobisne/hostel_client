@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMutation, useQuery } from "@apollo/react-hooks";
-import { DELETE_STUDENT_MUTATION, FETCH_STUDENTS_QUERY, FETCH_STUDENT_QUERY } from "../Query/graphql";
+import { DELETE_STUDENT_MUTATION,  FETCH_STUDENT_QUERY } from "../Query/graphql";
 import Button from '@material-ui/core/Button';
 import { useConfirm } from 'material-ui-confirm';
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
@@ -47,7 +47,7 @@ function DeleteButton({ postId, callBack}) {
 
  const onDelete = () => {
 
-  confirm({ description: `Did You Want To Delete  ${student.childname} Permanently`  })
+  confirm({ description: `Did You Want To Delete  ${student && student.childname} Permanently`  })
       .then(() =>  deleteStudent() )
       .catch(() =>  console.log("Deletion cancelled.") );
   };
